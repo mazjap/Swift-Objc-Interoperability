@@ -11,10 +11,11 @@ import Foundation
 // We want to manage this in our objc file.
 
 // Swift structs are not compatible with objc, we need to use a class
-class Contact {
-    var name: String
-    var relationship: String?
+class Contact: NSObject {
+    @objc var name: String
+    @objc var relationship: String?
     
+    @objc
     init(name: String, relationship: String?) {
         self.name = name
         self.relationship = relationship

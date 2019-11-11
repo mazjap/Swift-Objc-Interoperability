@@ -3,4 +3,4 @@
 //
 // Import Objective-C code files to give swift visibility of our objec classes and symbols
 
-#import "JACContactController"
+#import "JACContactController.h"
