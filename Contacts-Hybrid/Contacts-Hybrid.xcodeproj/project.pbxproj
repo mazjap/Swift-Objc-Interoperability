@@ -13,6 +13,9 @@
 		0E4E89B42379CC7E00716048 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E4E89B22379CC7E00716048 /* Main.storyboard */; };
 		0E4E89B62379CC8000716048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E4E89B52379CC8000716048 /* Assets.xcassets */; };
 		0E4E89B92379CC8000716048 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E4E89B72379CC8000716048 /* LaunchScreen.storyboard */; };
+		0E4E89C12379CD3B00716048 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4E89C02379CD3B00716048 /* ContactsTableViewController.swift */; };
+		0E4E89C52379CE5200716048 /* JACContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4E89C42379CE5200716048 /* JACContactController.m */; };
+		0E4E89C72379CECB00716048 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4E89C62379CECB00716048 /* Contact.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		0E4E89B52379CC8000716048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E4E89B82379CC8000716048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E4E89BA2379CC8000716048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E4E89C02379CD3B00716048 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
+		0E4E89C22379CE5100716048 /* Contacts-Hybrid-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Contacts-Hybrid-Bridging-Header.h"; sourceTree = "<group>"; };
+		0E4E89C32379CE5200716048 /* JACContactController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JACContactController.h; sourceTree = "<group>"; };
+		0E4E89C42379CE5200716048 /* JACContactController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JACContactController.m; sourceTree = "<group>"; };
+		0E4E89C62379CECB00716048 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +67,15 @@
 				0E4E89AC2379CC7E00716048 /* AppDelegate.swift */,
 				0E4E89AE2379CC7E00716048 /* SceneDelegate.swift */,
 				0E4E89B02379CC7E00716048 /* ViewController.swift */,
+				0E4E89C02379CD3B00716048 /* ContactsTableViewController.swift */,
+				0E4E89C62379CECB00716048 /* Contact.swift */,
 				0E4E89B22379CC7E00716048 /* Main.storyboard */,
+				0E4E89C32379CE5200716048 /* JACContactController.h */,
+				0E4E89C42379CE5200716048 /* JACContactController.m */,
 				0E4E89B52379CC8000716048 /* Assets.xcassets */,
 				0E4E89B72379CC8000716048 /* LaunchScreen.storyboard */,
 				0E4E89BA2379CC8000716048 /* Info.plist */,
+				0E4E89C22379CE5100716048 /* Contacts-Hybrid-Bridging-Header.h */,
 			);
 			path = "Contacts-Hybrid";
 			sourceTree = "<group>";
@@ -99,6 +112,7 @@
 				TargetAttributes = {
 					0E4E89A82379CC7D00716048 = {
 						CreatedOnToolsVersion = 11.2;
+						LastSwiftMigration = 1120;
 					};
 				};
 			};
@@ -138,8 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E4E89C72379CECB00716048 /* Contact.swift in Sources */,
 				0E4E89B12379CC7E00716048 /* ViewController.swift in Sources */,
+				0E4E89C52379CE5200716048 /* JACContactController.m in Sources */,
 				0E4E89AD2379CC7E00716048 /* AppDelegate.swift in Sources */,
+				0E4E89C12379CD3B00716048 /* ContactsTableViewController.swift in Sources */,
 				0E4E89AF2379CC7E00716048 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Contacts-Hybrid/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -292,6 +310,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mazjap.Contacts-Hybrid";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Contacts-Hybrid/Contacts-Hybrid-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -301,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Contacts-Hybrid/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +330,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mazjap.Contacts-Hybrid";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Contacts-Hybrid/Contacts-Hybrid-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
