@@ -10,10 +10,11 @@
 		0E4E89D62379DC6700716048 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4E89D52379DC6700716048 /* AppDelegate.m */; };
 		0E4E89D92379DC6700716048 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4E89D82379DC6700716048 /* SceneDelegate.m */; };
 		0E4E89DC2379DC6700716048 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4E89DB2379DC6700716048 /* ViewController.m */; };
-		0E4E89DF2379DC6700716048 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E4E89DD2379DC6700716048 /* Main.storyboard */; };
 		0E4E89E12379DC6B00716048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E4E89E02379DC6B00716048 /* Assets.xcassets */; };
 		0E4E89E42379DC6B00716048 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E4E89E22379DC6B00716048 /* LaunchScreen.storyboard */; };
 		0E4E89E72379DC6B00716048 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4E89E62379DC6B00716048 /* main.m */; };
+		0E4E89EE2379DCB200716048 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E4E89ED2379DCB200716048 /* Main.storyboard */; };
+		0E4E89F12379DCE700716048 /* JACPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E4E89F02379DCE700716048 /* JACPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,11 +25,13 @@
 		0E4E89D82379DC6700716048 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		0E4E89DA2379DC6700716048 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0E4E89DB2379DC6700716048 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0E4E89DE2379DC6700716048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E4E89E02379DC6B00716048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E4E89E32379DC6B00716048 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E4E89E52379DC6B00716048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E4E89E62379DC6B00716048 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0E4E89ED2379DCB200716048 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0E4E89EF2379DCE700716048 /* JACPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JACPerson.h; sourceTree = "<group>"; };
+		0E4E89F02379DCE700716048 /* JACPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JACPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +70,13 @@
 				0E4E89D82379DC6700716048 /* SceneDelegate.m */,
 				0E4E89DA2379DC6700716048 /* ViewController.h */,
 				0E4E89DB2379DC6700716048 /* ViewController.m */,
-				0E4E89DD2379DC6700716048 /* Main.storyboard */,
+				0E4E89ED2379DCB200716048 /* Main.storyboard */,
 				0E4E89E02379DC6B00716048 /* Assets.xcassets */,
 				0E4E89E22379DC6B00716048 /* LaunchScreen.storyboard */,
 				0E4E89E52379DC6B00716048 /* Info.plist */,
 				0E4E89E62379DC6B00716048 /* main.m */,
+				0E4E89EF2379DCE700716048 /* JACPerson.h */,
+				0E4E89F02379DCE700716048 /* JACPerson.m */,
 			);
 			path = "Swapi Objc";
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 		0E4E89C92379DC6700716048 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JAC;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Mazjap Co";
 				TargetAttributes = {
@@ -133,9 +139,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E4E89EE2379DCB200716048 /* Main.storyboard in Resources */,
 				0E4E89E42379DC6B00716048 /* LaunchScreen.storyboard in Resources */,
 				0E4E89E12379DC6B00716048 /* Assets.xcassets in Resources */,
-				0E4E89DF2379DC6700716048 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E4E89DC2379DC6700716048 /* ViewController.m in Sources */,
+				0E4E89F12379DCE700716048 /* JACPerson.m in Sources */,
 				0E4E89D62379DC6700716048 /* AppDelegate.m in Sources */,
 				0E4E89E72379DC6B00716048 /* main.m in Sources */,
 				0E4E89D92379DC6700716048 /* SceneDelegate.m in Sources */,
@@ -156,14 +163,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0E4E89DD2379DC6700716048 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0E4E89DE2379DC6700716048 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0E4E89E22379DC6B00716048 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
